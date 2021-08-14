@@ -11,10 +11,6 @@ export default{
     linkActiveClass: 'font-semibold',
     routes: [
         {
-            path: '*',
-            component: NotFound
-        },
-        {
             path: '/',
             component: Home,
             name: "Home"
@@ -44,7 +40,11 @@ export default{
                })
            }
        
-          }
+        },
+        {
+            path: '*',
+            component: NotFound
+        },
           
     ]
 }

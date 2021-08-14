@@ -9,6 +9,7 @@
             <div class="flax">
                 <router-link class="mr-4" to='/login' exact>Login</router-link>
                 <router-link to='/register'>Register</router-link>
+                <router-link to='/dashboard'>dashboard</router-link>
             </div>
         </div>
     </div>

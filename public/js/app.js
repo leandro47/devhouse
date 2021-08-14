@@ -2135,9 +2135,6 @@ __webpack_require__.r(__webpack_exports__);
   mode: 'history',
   linkActiveClass: 'font-semibold',
   routes: [{
-    path: '*',
-    component: _components_NotFound__WEBPACK_IMPORTED_MODULE_5__.default
-  }, {
     path: '/',
     component: _components_Home__WEBPACK_IMPORTED_MODULE_0__.default,
     name: "Home"
@@ -2164,6 +2161,9 @@ __webpack_require__.r(__webpack_exports__);
         });
       });
     }
+  }, {
+    path: '*',
+    component: _components_NotFound__WEBPACK_IMPORTED_MODULE_5__.default
   }]
 });
 
@@ -38281,12 +38281,6 @@ var render = function() {
           _c("label", { staticClass: "w-full", attrs: { for: "name" } }, [
             _vm._v("Name")
           ]),
-          _vm._v(" "),
-          _vm.errors.name
-            ? _c("span", { staticClass: "w-full text-red-500" }, [
-                _vm._v(_vm._s(_vm.errors.name[0]))
-              ])
-            : _vm._e(),
           _vm._v(" "),
           _c("input", {
             directives: [
