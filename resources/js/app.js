@@ -2,12 +2,15 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-import VueRouter from 'vue-router';
-import routes from './routes';
-
-Vue.use(VueRouter);
+import router from './router';
+import store from './store/store';
+import App from './layouts/App.vue';
+import VueAxios from 'vue-axios';
 
 const app = new Vue({
+    router,
+    store,
+    VueAxios,
     el: '#app',
-    router: new VueRouter(routes)
+    render: h => h(App)
 });
