@@ -1,48 +1,56 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Register from './pages/Register';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import NotFound from './pages/NotFound';
+import Register from './pages/user/Register';
+import Login from './pages/auth/Login';
+import Dashboard from './pages/dashboard/Dashboard';
+import NotFound from './pages/response/NotFound';
 
 Vue.use(VueRouter);
+
+const guest = (to, form, next) => {
+    axios.get('/api/athenticated').then(() => {
+        next("/home");
+    }).catch(() => {
+        return next();
+    })
+};
+
+const auth = (to, form, next) => {
+    axios.get('/api/athenticated').then(() => {
+        next()
+    }).catch(() => {
+        return next({ name: 'Login' })
+    })
+};
 
 const router = new VueRouter({
     mode: 'history',
     linkExactActiveClass: 'active',
     routes: [
         {
-            path: '/',
-            component: Home,
-            name: "Home"
-        },
-        {
-            path: '/about',
-            component: About
+            path: "/home",
+            name: "Home",
+            component: Dashboard,
+            beforeEnter: auth
         },
         {
             path: '/register',
-            component: Register
+            name: 'Register',
+            component: Register,
+            beforeEnter: auth
         },
         {
             path: '/login',
             component: Login,
-            name: 'Login'
+            name: 'Login',
+            beforeEnter: guest
         },
         {
             path: "/dashboard",
             name: "Dashboard",
             component: Dashboard,
-           beforeEnter: (to, form, next) =>{
-               axios.get('/api/athenticated').then(()=>{
-                   next()
-               }).catch(()=>{
-                   return next({ name: 'Login'})
-               })
-           }
+            beforeEnter: auth
         },
         {
             path: '*',
