@@ -9,7 +9,6 @@
     <script>
         const BASE_URL = "{{ url('/') }}"
     </script>
-        <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
@@ -25,7 +24,6 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
-
     <script src="{{ asset('assets/vendors/select2/select2.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/typeahead.js/typeahead.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
