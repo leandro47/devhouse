@@ -1,23 +1,28 @@
 <template>
   <div class="wrapper fadeInDown">
     <div id="formContent">
-        <input
-          type="text"
-          id="login"
-          class="fadeIn second"
-          name="login"
-          placeholder="email"
-          v-model="form.email"
-        />
-        <input
-          type="text"
-          id="password"
-          class="fadeIn third"
-          name="login"
-          placeholder="password"
-          v-model="form.password"
-        />
-        <input @click.prevent="loginUser" type="submit" class="fadeIn fourth" value="Log In" />
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        placeholder="email"
+        v-model="user.email"
+      />
+      <input
+        type="text"
+        id="password"
+        class="fadeIn third"
+        name="login"
+        placeholder="password"
+        v-model="user.password"
+      />
+      <input
+        @click.prevent="login"
+        type="submit"
+        class="fadeIn fourth"
+        value="Log In"
+      />
       <div id="formFooter">
         <router-link class="underlineHover" to="/register"
           >Register</router-link
@@ -27,26 +32,32 @@
   </div>
 </template>
 <script>
+import { mapGetters, mapActions } from "vuex";
+
 export default {
   data() {
     return {
-      form: {
+      user: {
         email: "",
         password: "",
       },
-      errors: [],
     };
   },
+  computed: {
+    ...mapGetters({
+      error: "fetchAuthError",
+    }),
+  },
   methods: {
-    loginUser() {
-      axios
-        .post("/api/login", this.form)
-        .then(() => {
-          this.$router.push({ name: "Dashboard" });
-        })
-        .catch((error) => {
-          this.errors = error.response.data.errors;
-        });
+    ...mapActions({
+      authUser: "authUser",
+    }),
+    async login() {
+      await this.authUser(this.user);
+
+      if (!this.error.length) {
+        return this.$router.push({ name: "Dashboard" });
+      }
     },
   },
 };

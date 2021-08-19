@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-//import AreaModule from './modules/AreaModule'
+import AuthModule from './modules/AuthModule'
 
 Vue.use(Vuex)
 
@@ -18,6 +18,6 @@ export default new Vuex.Store({
         }
     },
     modules: {
-        //AreaModule,
+        AuthModule,
     }
 })
