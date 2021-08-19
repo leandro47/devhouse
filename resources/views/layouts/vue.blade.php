@@ -10,12 +10,31 @@
         const BASE_URL = "{{ url('/') }}"
     </script>
         <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/select2/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/demo_1/style.css') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
 </head>
 
 <body>
     <div id="app"></div>
+
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="../../../assets/vendors/js/vendor.bundle.base.js"></script>>
+    <script src="../../../assets/vendors/select2/select2.min.js"></script>
+    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="../../../assets/js/off-canvas.js"></script>
+    <script src="../../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../../assets/js/misc.js"></script>
+    <script src="../../../assets/js/settings.js"></script>
+    <script src="../../../assets/js/todolist.js"></script>
+    <script src="../../../assets/js/file-upload.js"></script>
+    <script src="../../../assets/js/typeahead.js"></script>
+    <script src="../../../assets/js/select2.js"></script>
 </body>
 
 </html>
