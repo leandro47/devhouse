@@ -10,7 +10,7 @@ Vue.use(VueRouter);
 
 const guest = (to, form, next) => {
     axios.get('/api/athenticated').then(() => {
-        next("/home");
+        next("/");
     }).catch(() => {
         return next();
     })
@@ -29,7 +29,7 @@ const router = new VueRouter({
     linkExactActiveClass: 'active',
     routes: [
         {
-            path: "/home",
+            path: "/",
             name: "Home",
             component: Dashboard,
             beforeEnter: auth
@@ -38,7 +38,7 @@ const router = new VueRouter({
             path: '/register',
             name: 'Register',
             component: Register,
-            beforeEnter: auth
+            beforeEnter: guest
         },
         {
             path: '/login',
