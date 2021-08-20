@@ -23,7 +23,8 @@
     <div id="app"></div>
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script> -->
     <script src="{{ asset('assets/vendors/select2/select2.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/typeahead.js/typeahead.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
