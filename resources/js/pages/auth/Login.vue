@@ -12,7 +12,7 @@
                 class="form-control"
                 id="exampleInputEmail1"
                 placeholder="Email"
-                v-model="user.email"
+                v-model="form.email"
               />
             </div>
             <div class="form-group">
@@ -22,7 +22,7 @@
                 class="form-control"
                 id="exampleInputPassword1"
                 placeholder="Password"
-                v-model="user.password"
+                v-model="form.password"
               />
             </div>
             <button @click.prevent="login" type="submit" class="btn btn-primary mr-2 btn-block">Entrar</button>
@@ -38,7 +38,7 @@ import { mapGetters, mapActions } from "vuex";
 export default {
   data() {
     return {
-      user: {
+      form: {
         email: "",
         password: "",
       },
@@ -46,7 +46,8 @@ export default {
   },
   computed: {
     ...mapGetters({
-      error: "fetchAuthError",
+      error: "fetchUserError",
+      user: "fetchUser",
     }),
   },
   methods: {
@@ -54,7 +55,7 @@ export default {
       authUser: "authUser",
     }),
     async login() {
-      await this.authUser(this.user);
+      await this.authUser(this.form);
 
       if (!this.error.length) {
         return this.$router.push({ name: "Dashboard" });

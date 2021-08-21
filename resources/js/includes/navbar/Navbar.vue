@@ -245,7 +245,7 @@
           </div>
         </li>
         <li class="nav-item nav-logout d-none d-lg-block">
-          <a class="nav-link" href="#">
+          <a class="nav-link" @click.prevent="logout">
             <i class="mdi mdi-home-circle"></i>
           </a>
         </li>
@@ -262,8 +262,27 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
+
 export default {
-     name: "Navbar",
+  name: "Navbar",
+  computed: {
+    ...mapGetters({
+      error: "fetchUserError",
+    }),
+  },
+  methods: {
+    ...mapActions({
+      logoutUser: "logoutUser",
+    }),
+    async logout() {
+      await this.logoutUser();
+
+      if (!this.error.length) {
+        return this.$router.push({ name: "Login" });
+      }
+    },
+  },
 };
 </script>
 
