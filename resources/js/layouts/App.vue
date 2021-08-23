@@ -2,7 +2,6 @@
   <div class="container-scroller">
     <Sidebar v-if="user.name"></Sidebar>
     <div class="container-fluid">
-      <Theme v-if="user.name"></Theme>
       <Navbar v-if="user.name"></Navbar>
       <div class="main-panel">
         <div class="content-wrapper">
@@ -18,7 +17,6 @@
 import Footer from "./../includes/footer/Footer";
 import Navbar from "./../includes/navbar/Navbar";
 import Sidebar from "./../includes/sidebar/Sidebar";
-import Theme from "./../components/settings/theme/Theme.vue";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
@@ -31,7 +29,6 @@ export default {
     Footer,
     Navbar,
     Sidebar,
-    Theme,
   },
   methods: {
     ...mapActions({
