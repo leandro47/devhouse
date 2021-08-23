@@ -1,5 +1,5 @@
 <template>
-  <div class="container-scroller">
+  <div class="container-fluid">
     <Sidebar v-if="user.name"></Sidebar>
     <div class="container-fluid">
       <Navbar v-if="user.name"></Navbar>

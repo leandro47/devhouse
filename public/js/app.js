@@ -4989,6 +4989,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Footer'
 });
@@ -5079,6 +5086,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5202,10 +5261,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
 //
 //
 //
@@ -29502,9 +29557,35 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", [
+      _c(
+        "div",
+        {
+          staticClass: "text-center p-4",
+          staticStyle: { "background-color": "rgba(0, 0, 0, 0.05)" }
+        },
+        [
+          _vm._v("\r\n    © 2021 Copyright:\r\n    "),
+          _c(
+            "a",
+            {
+              staticClass: "text-reset fw-bold",
+              attrs: { href: "https://mdbootstrap.com/" }
+            },
+            [_vm._v("MDBootstrap.com")]
+          )
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -29552,9 +29633,176 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "div",
+    {
+      staticClass: "d-flex flex-column flex-shrink-0 p-3 bg-light",
+      staticStyle: { width: "280px" }
+    },
+    [
+      _c(
+        "a",
+        {
+          staticClass:
+            "d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none",
+          attrs: { href: "/" }
+        },
+        [
+          _c(
+            "svg",
+            { staticClass: "bi me-2", attrs: { width: "40", height: "32" } },
+            [_c("use", { attrs: { "xlink:href": "#bootstrap" } })]
+          ),
+          _vm._v(" "),
+          _c("span", { staticClass: "fs-4" }, [_vm._v("Sidebar")])
+        ]
+      ),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("ul", { staticClass: "nav nav-pills flex-column mb-auto" }, [
+        _c("li", { staticClass: "nav-item" }, [
+          _c(
+            "a",
+            {
+              staticClass: "nav-link active",
+              attrs: { href: "#", "aria-current": "page" }
+            },
+            [
+              _c(
+                "svg",
+                {
+                  staticClass: "bi me-2",
+                  attrs: { width: "16", height: "16" }
+                },
+                [_c("use", { attrs: { "xlink:href": "#home" } })]
+              ),
+              _vm._v("\n         Home\n       ")
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "nav-link link-dark", attrs: { href: "#" } }, [
+            _c(
+              "svg",
+              { staticClass: "bi me-2", attrs: { width: "16", height: "16" } },
+              [_c("use", { attrs: { "xlink:href": "#speedometer2" } })]
+            ),
+            _vm._v("\n         Dashboard\n       ")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "nav-link link-dark", attrs: { href: "#" } }, [
+            _c(
+              "svg",
+              { staticClass: "bi me-2", attrs: { width: "16", height: "16" } },
+              [_c("use", { attrs: { "xlink:href": "#table" } })]
+            ),
+            _vm._v("\n         Orders\n       ")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "nav-link link-dark", attrs: { href: "#" } }, [
+            _c(
+              "svg",
+              { staticClass: "bi me-2", attrs: { width: "16", height: "16" } },
+              [_c("use", { attrs: { "xlink:href": "#grid" } })]
+            ),
+            _vm._v("\n         Products\n       ")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "nav-link link-dark", attrs: { href: "#" } }, [
+            _c(
+              "svg",
+              { staticClass: "bi me-2", attrs: { width: "16", height: "16" } },
+              [_c("use", { attrs: { "xlink:href": "#people-circle" } })]
+            ),
+            _vm._v("\n         Customers\n       ")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _vm._m(0)
+    ]
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dropdown" }, [
+      _c(
+        "a",
+        {
+          staticClass:
+            "d-flex align-items-center link-dark text-decoration-none dropdown-toggle",
+          attrs: {
+            href: "#",
+            id: "dropdownUser2",
+            "data-bs-toggle": "dropdown",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("img", {
+            staticClass: "rounded-circle me-2",
+            attrs: {
+              src: "https://github.com/mdo.png",
+              alt: "",
+              width: "32",
+              height: "32"
+            }
+          }),
+          _vm._v(" "),
+          _c("strong", [_vm._v("mdo")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "ul",
+        {
+          staticClass: "dropdown-menu text-small shadow",
+          attrs: { "aria-labelledby": "dropdownUser2" }
+        },
+        [
+          _c("li", [
+            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+              _vm._v("New project...")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+              _vm._v("Settings")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+              _vm._v("Profile")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [_c("hr", { staticClass: "dropdown-divider" })]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+              _vm._v("Sign out")
+            ])
+          ])
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -29579,7 +29827,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container-scroller" },
+    { staticClass: "container-fluid" },
     [
       _vm.user.name ? _c("Sidebar") : _vm._e(),
       _vm._v(" "),
@@ -29634,100 +29882,132 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row justify-content-md-center" }, [
-    _c("div", { staticClass: "col-md-6 grid-margin stretch-card" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-body" }, [
-          _c("h4", { staticClass: "card-title text-center" }, [
-            _vm._v("Login")
+  return _c("div", { staticClass: "container col-xl-10 col-xxl-8 px-4 py-5" }, [
+    _c("div", { staticClass: "row align-items-center g-lg-5 py-5" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-10 mx-auto col-lg-5" }, [
+        _c("form", { staticClass: "p-4 p-md-5 border rounded-3 bg-light" }, [
+          _c("div", { staticClass: "form-floating mb-3" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.email,
+                  expression: "form.email"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                type: "email",
+                id: "floatingInput",
+                placeholder: "name@example.com"
+              },
+              domProps: { value: _vm.form.email },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.form, "email", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "floatingInput" } }, [
+              _vm._v("Email address")
+            ])
           ]),
           _vm._v(" "),
-          _c("form", { staticClass: "forms-sample" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "exampleInputEmail1" } }, [
-                _vm._v("Email")
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.email,
-                    expression: "form.email"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "email",
-                  id: "exampleInputEmail1",
-                  placeholder: "Email"
-                },
-                domProps: { value: _vm.form.email },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.form, "email", $event.target.value)
-                  }
+          _c("div", { staticClass: "form-floating mb-3" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.password,
+                  expression: "form.password"
                 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "exampleInputPassword1" } }, [
-                _vm._v("Senha")
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.password,
-                    expression: "form.password"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "password",
-                  id: "exampleInputPassword1",
-                  placeholder: "Password"
-                },
-                domProps: { value: _vm.form.password },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.form, "password", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-primary mr-2 btn-block",
-                attrs: { type: "submit" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.login.apply(null, arguments)
-                  }
-                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                type: "password",
+                id: "floatingPassword",
+                placeholder: "Password"
               },
-              [_vm._v("Entrar")]
-            )
+              domProps: { value: _vm.form.password },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.form, "password", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "floatingPassword" } }, [
+              _vm._v("Password")
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "w-100 btn btn-lg btn-primary",
+              attrs: { type: "submit" },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.login.apply(null, arguments)
+                }
+              }
+            },
+            [_vm._v("Sign up")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "my-4" }),
+          _vm._v(" "),
+          _c("small", { staticClass: "text-muted" }, [
+            _vm._v("By clicking Sign up, you agree to the terms of use.")
           ])
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-7 text-center text-lg-start" }, [
+      _c("h1", { staticClass: "display-4 fw-bold lh-1 mb-3" }, [
+        _vm._v("Vertically centered hero sign-up form")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "col-lg-10 fs-4" }, [
+        _vm._v(
+          "Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it."
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "checkbox mb-3" }, [
+      _c("label", [
+        _c("input", { attrs: { type: "checkbox", value: "remember-me" } }),
+        _vm._v(" Remember me\n          ")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
