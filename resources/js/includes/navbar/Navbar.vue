@@ -7,6 +7,7 @@
       class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
       id="sidebarToggle"
       href="#!"
+      @click.prevent="sidebarToggle"
     >
       <i class="fas fa-bars"></i>
     </button>
@@ -79,6 +80,13 @@ export default {
       if (!this.error.length) {
         return this.$router.push({ name: "Login" });
       }
+    },
+    sidebarToggle() {
+      document.body.classList.toggle("sb-sidenav-toggled");
+      localStorage.setItem(
+        "sb|sidebar-toggle",
+        document.body.classList.contains("sb-sidenav-toggled")
+      );
     },
   },
 };

@@ -1,16 +1,22 @@
 <template>
   <div>
-    <Navbar></Navbar>
-    <div id="layoutSidenav">
-      <Sidebar></Sidebar>
-      <div id="layoutSidenav_content">
-        <main>
-          <div class="container-fluid px-4">
-            <router-view></router-view>
-          </div>
-        </main>
-        <Footer></Footer>
+    <div v-if="user.email">
+      <Navbar></Navbar>
+      <div id="layoutSidenav">
+        <Sidebar></Sidebar>
+        <div id="layoutSidenav_content">
+          <main>
+            <div class="container-fluid px-4">
+              <router-view></router-view>
+            </div>
+          </main>
+          <Footer></Footer>
+        </div>
       </div>
+    </div>
+    <div v-else>
+      <router-view></router-view>
+      <Footer></Footer>
     </div>
   </div>
 </template>
