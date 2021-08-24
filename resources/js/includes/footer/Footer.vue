@@ -1,17 +1,33 @@
 <template>
-<footer>
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+    <footer class="py-4 bg-light mt-auto">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between small">
+          <div class="text-muted">
+            Copyright &copy;
+            <a class="text-reset fw-bold" href="https://leandro47.com/"
+              >Leandro da Silva</a
+            >
+            {{ this.fullYear() }}
+          </div>
+          <div>
+            <a href="#">Privacy Policy</a>
+            &middot;
+            <a href="#">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: "Footer",
+  methods: {
+    fullYear() {
+      let today = new Date();
+      return today.getFullYear();
+    },
+  },
 };
 </script>
 

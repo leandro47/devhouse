@@ -1,12 +1,14 @@
 <template>
-  <div class="container-fluid">
-    <Sidebar v-if="user.name"></Sidebar>
-    <div class="container-fluid">
-      <Navbar v-if="user.name"></Navbar>
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <router-view></router-view>
-        </div>
+  <div>
+    <Navbar></Navbar>
+    <div id="layoutSidenav">
+      <Sidebar></Sidebar>
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <router-view></router-view>
+          </div>
+        </main>
         <Footer></Footer>
       </div>
     </div>
