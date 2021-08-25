@@ -6,7 +6,7 @@
           <div class="col-lg-5">
             <div class="card shadow-lg border-0 rounded-lg mt-5">
               <div class="card-header">
-                <h3 class="text-center font-weight-light my-4">Entrar</h3>
+                <h3 class="text-center font-weight-light my-4">DevHouse</h3>
               </div>
               <div class="card-body">
                 <form>
@@ -35,8 +35,12 @@
                       class="btn btn-primary"
                       type="button"
                       @click.prevent="login"
-                      >Button</a
+                      >Entrar</a
                     >
+                    <hr>
+                    <div class="text-center text-muted">
+                      version 1.0.0
+                    </div>
                   </div>
                 </form>
               </div>

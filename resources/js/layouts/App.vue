@@ -15,8 +15,12 @@
       </div>
     </div>
     <div v-else>
-      <router-view></router-view>
-      <Footer></Footer>
+      <div id="layoutAuthentication">
+        <router-view></router-view>
+        <div id="layoutAuthentication_footer">
+          <Footer></Footer>
+        </div>
+      </div>
     </div>
   </div>
 </template>
